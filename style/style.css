@@ -1,0 +1,519 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{  
+  font-size: 10px;
+  font-family: 'Oswald', sans-serif;  
+  background-color: #efefef;
+}
+
+/* NAV */
+
+nav ul{
+  display: flex;
+  position: fixed;
+  justify-content: space-between;  
+  right: 0%;
+  top: 0%;
+  z-index: 1; 
+  color: #fff;
+  width: 40%;  
+  padding-top: 20px;
+  padding-right: 20px;    
+  font-size: 2.1rem;
+  transition: 0.3s;
+  height: 50px;
+  
+}
+
+.active{
+  padding-top: 5px;
+  padding-right: 5px; 
+  width: 30%;
+  font-size: 1.5rem;
+  background-color: rgba(20 , 20, 20, 0.5);
+  border-bottom-left-radius: 10px ;
+  height: 50px;
+  
+  
+}
+
+nav ul li{
+  padding: 0 10px; 
+  text-align: center;
+  list-style: none;  
+}
+
+nav ul li a{
+  text-decoration: none;
+  
+  color: #fff;  
+  display: block;
+  transition: 0.2s;  
+  padding: 0 20px;
+  /* text-shadow: 0px 0px 5px rgb(19, 9, 1); */
+  font-weight: 400;
+}
+
+ul li a:hover{  
+  color: rgb(255, 120, 0);
+}
+
+/* HEADER */
+
+header{   
+  height: 100vh;
+  width: 100%;    
+  overflow: hidden; 
+}
+
+.head{
+  position: absolute;
+  color: white;
+  left: 10%;
+  bottom: 20%;
+}
+
+.head h1{
+  font-size: 4rem;  
+}
+
+.head h2{  
+  font-size: 3rem;
+  font-weight: 300;
+  
+}
+
+header img{    
+  height: 100%;
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  background-position: center;  
+}
+
+/* SECTION SKILLS */
+
+  .skills{
+    position: relative;    
+    width: 100%;
+    min-height: 100vh;   
+  }
+
+  .skills .wrapper{
+    display: flex;    
+    max-width: 80%;   
+    margin: 0 auto;
+    justify-content:  space-between;        
+  }
+  
+  .skills .wrapper div{
+    width: 25%;    
+  }
+
+  .skills .wrapper i{
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 40px;   
+    color: rgb(255, 120, 0); 
+  }
+
+  .skills .wrapper h1{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #444;
+    font-weight: 400;
+  }
+
+  .skills .wrapper ul li{    
+    font-size: 1.5rem;
+    list-style: none;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    color: #666;
+    font-weight: 300;
+  }
+
+  .subheads{
+    padding: 40px 0 20px 0;
+    text-align: center;
+    font-size: 4rem;
+    margin: 40px;
+  }
+  .subheads.white{
+    color: #eee;
+  }
+
+  /* EXPERIENCE */
+
+  .experience{
+    position: relative;    
+    width: 100%;
+    min-height: 100vh;   
+    background-color: rgb(20 , 20, 20);
+  } 
+
+  .experience .wrapper{    
+    max-width: 80%;   
+    margin: 0 auto;  
+  }
+
+  .experience .wrapper p{
+    font-size: 1.2rem;
+    color: rgb(255, 120, 0);
+  
+  }
+  
+  .experience .wrapper h1{    
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: rgb(105, 105, 105);
+    font-weight: 400;
+  }
+
+  .experience .wrapper ul{
+    padding-bottom: 80px;
+  }
+
+  .experience .wrapper ul li{    
+    font-size: 1.5rem;
+    list-style: none;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    color: #eee;
+    font-weight: 300;
+  }
+  
+  /* ABOUT ME */
+
+  .about{
+    position: relative;
+    /* top: 300vh; */
+    width: 100%;
+    min-height: 100vh;   
+  }
+
+  .about .wrapper{    
+    max-width: 80%;
+    margin: 0 auto;    
+  }
+
+  .about .wrapper p{   
+    font-size: 2rem;
+    color: #666;    
+    font-weight: 300;
+  }
+
+  .about .wrapper img{
+  float: left;
+  margin-right: 40px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  object-position: 40% 60%;  
+  }
+
+  footer{
+    position: relative;
+    bottom: 0;
+    background-color: rgb(20 , 20, 20);;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    margin-top: 5%;
+    font-weight: 400;
+  }
+
+  @media (min-width: 320px) and (max-width: 1070px) {
+
+   /* NAV */
+
+nav ul{  
+  position: static;
+  justify-content: center;      
+  width: 100%;  
+  padding-top: 0;
+  padding-right: 0px;    
+  font-size: 1.8rem; 
+  flex-wrap: wrap;
+  height: auto;
+  background-color: black;
+}
+
+
+
+nav ul li{   
+  border-top: solid 1px #ddd;
+  flex-basis: 100%;
+}
+
+nav ul li:nth-child(1){   
+  border-top: none;
+}
+
+nav ul li a{
+  display: inline;   
+  font-weight: 400;
+}
+
+/* HEADER */
+
+
+.head{
+  bottom: 0;  
+  top: 100%;
+}
+
+.head h1{
+  font-size: 2rem;  
+}
+
+.head h2{  
+  font-size: 1.5rem;  
+}
+
+
+/* SECTION SKILLS */
+
+  .skills{
+    position: relative;         
+  }
+
+  .skills .wrapper{   
+    flex-direction: column;            
+  }
+  
+  .skills .wrapper div{
+    width: 100%;    
+  }
+
+  .skills .wrapper ul{
+    margin-bottom: 20px;
+  }
+
+  .subheads{
+    padding: 20px 0 20px 0;    
+    font-size: 3rem;
+    margin: 20px;
+  }
+  
+  /* EXPERIENCE */
+
+  .experience .wrapper ul li{       
+    padding-bottom: 20px;
+  }
+
+  .experience .wrapper ul {       
+    padding-bottom: 20px;
+  }
+  
+  /* ABOUT ME */
+
+  .about .wrapper img{
+  float: none;
+  display: block;  
+  width: 250px;
+  height: 250px;
+  margin: 0 auto; 
+  }
+
+  footer{   
+    font-size: 1rem;   
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1070px) {
+
+   /* NAV */
+
+nav ul{  
+  position: fixed;
+  justify-content: center;      
+  width: 100%;     
+  font-size: 1.8rem; 
+  padding-top: 20px;  
+  background-color: transparent;
+}
+
+.active{
+  position: fixed;  
+  width: 100%;
+  font-size: 1.5rem;  
+  height: auto;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 0;
+}
+
+nav ul li{   
+  border-top: none;
+  flex-basis: 25%;
+}
+
+/* HEADER */
+
+.head{   
+  top: 75%;
+}
+
+.head h1{
+  font-size: 3rem;  
+}
+
+.head h2{  
+  font-size: 2rem;  
+}
+
+/* SECTION SKILLS */
+
+  .subheads{       
+    font-size: 3.5rem;    
+  }
+  
+  /* EXPERIENCE */
+
+  .experience .wrapper ul li{       
+    padding-bottom: 20px;
+  }
+  
+  /* ABOUT ME */
+
+  .about .wrapper img{
+  float: left;
+  padding-right: 20px;  
+  }
+
+  footer{   
+    font-size: 1.2rem;   
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1070px) {
+
+  /* NAV */
+
+nav ul{  
+ justify-content: space-between;   
+ width: 80%;     
+ font-size: 2.2rem; 
+ 
+}
+
+.active{ 
+ width: 65%;
+ font-size: 1.5rem;  
+ /* height: auto; */
+ 
+ border-bottom-left-radius: 10px;
+}
+
+nav ul li{   
+ border-top: none;
+ flex-basis: 20%;
+}
+
+/* HEADER */
+
+.head{
+ bottom: 0;  
+ bottom: 30%;
+}
+
+.head h1{
+ font-size: 4rem;  
+}
+
+.head h2{  
+ font-size: 3rem;  
+}
+
+/* SECTION SKILLS */
+
+.skills .wrapper h1{
+  font-size: 3rem;
+  
+}
+
+.skills .wrapper ul li{    
+  font-size: 2rem;
+  
+}
+
+ .subheads{       
+   font-size: 3.5rem;    
+ }
+ 
+ /* EXPERIENCE */
+ .experience .wrapper p{
+  font-size: 1.5rem;
+  color: rgb(255, 120, 0);
+
+}
+
+.experience .wrapper h1{    
+  font-size: 2.8rem;
+  
+}
+
+
+ .experience .wrapper ul li{  
+   font-size: 1.8rem;     
+   padding-bottom: 20px;
+ }
+ 
+ /* ABOUT ME */
+ 
+ .about .wrapper p{   
+  font-size: 1.8rem;  
+}
+ 
+ .about .wrapper img{
+ float: left;
+ width: 500px;
+ height: 500px;  
+ padding-right: 20px;  
+ }
+
+ footer{   
+   font-size: 1.2rem;   
+ }
+}
+
+
+@media (min-width: 1070px) and (max-width: 1366px)  {
+  
+  /* NAV */
+
+nav ul{      
+  width: 65%;     
+  font-size: 2.5rem;   
+ }
+ 
+ .active{ 
+  width: 50%;    
+  height: 5vh;  
+ }
+ 
+ /* HEADER */
+ 
+ .head{
+  bottom: 0;  
+  top: 65%;
+ }
+ 
+ .head h1{
+  font-size: 4rem;  
+ }
+ 
+ .head h2{  
+  font-size: 3rem;  
+ }
+}
+
+
