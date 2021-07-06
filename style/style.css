@@ -16,23 +16,56 @@ nav ul{
   display: flex;
   position: fixed;
   justify-content: space-between;  
-  right: 0%;
+  right: 20px;
   top: 0%;
   z-index: 1; 
   color: #fff;
   width: 40%;  
-  padding-top: 20px;
-  padding-right: 20px;    
-  font-size: 2.1rem;
+  padding-top: 20px;   
   transition: 0.3s;
-  height: 50px;
-  
+  height: 50px;  
+  font-size: 2.1rem;
+}
+
+.btnLang{
+  position: absolute; 
+  top: 2vh;
+  left: 2vh;  
+}
+.btnLang button{
+  font-size: 1.5rem; 
+  height: 50px; 
+  width: 50px;
+  background-color: transparent;
+  border: solid #fff 2px;
+  border-radius: 8px;
+  cursor: pointer;  
+  line-height: 45px;  
+}
+
+
+
+.btnLang button a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Oswald', sans-serif;   
+  font-size: 1.5rem;  
+}
+
+.btnLang button a:hover{
+  color: rgb(255, 120, 0);  
+}
+
+.btnLang button:hover{ 
+  border-color: rgb(255, 120, 0);
 }
 
 .active{
+  right: 0;
   padding-top: 5px;
   padding-right: 5px; 
-  width: 30%;
+  width: 35%;
   font-size: 1.5rem;
   background-color: rgba(20 , 20, 20, 0.5);
   border-bottom-left-radius: 10px ;
@@ -263,6 +296,10 @@ nav ul li a{
 
 /* HEADER */
 
+.btnLang{   
+  top: 180px;
+  left: 2vh;  
+}
 
 .head{
   bottom: 0;  
@@ -357,6 +394,11 @@ nav ul li{
 
 /* HEADER */
 
+.btnLang{   
+  top: 8vh;
+  left: 2vh;  
+}
+
 .head{   
   top: 75%;
 }
@@ -419,6 +461,8 @@ nav ul li{
 }
 
 /* HEADER */
+
+
 
 .head{
  bottom: 0;  
@@ -501,6 +545,8 @@ nav ul{
  }
  
  /* HEADER */
+
+
  
  .head{
   bottom: 0;  
