@@ -15,3 +15,10 @@ $(document).on('scroll', function(){
     $('nav ul').removeClass('active');
   }
 })
+
+const burger = document.querySelector('.fa-comment-dots');
+const MSG = document.querySelector('.messege div')
+
+burger.addEventListener('click', function(){
+  MSG.classList.toggle('activeMSG');  
+})
