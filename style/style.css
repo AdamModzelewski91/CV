@@ -323,7 +323,6 @@ header img {
   padding-left: 5px;
   padding-right: 5px;
   margin-bottom: 10px;
-
 }
 
 .messege .contactForm .contactWrapper input:focus {
@@ -331,8 +330,6 @@ header img {
   border: #444 solid 2px;
   border-radius: 5px;
 }
-
-
 
 .messege .contactForm .contactWrapper textarea {
   /* height: 100px; */
@@ -342,9 +339,13 @@ header img {
   line-height: 25px;
   padding-left: 5px;
   padding-right: 5px;
-  /* margin-top: 10px; */
+  margin-bottom: 10px;
   width: 100%;
   resize: none;
+}
+
+.messege .contactForm .contactWrapper div{
+  align-self: center; 
 }
 
 .messege .contactForm .contactWrapper textarea:focus {
