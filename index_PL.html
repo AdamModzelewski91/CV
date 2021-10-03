@@ -58,7 +58,8 @@
           <li>bardzo dobra znajomość AzureDevops,</li>
           <li>dobra znajomość HTML,</li>
           <li>dobra znajomość CSS,</li>
-          <li>znajomość JS,</li>
+          <li>dobra znajomość JS,</li>
+          <li>znajomość React,</li>
           <li>znajomość JQ,</li>
           <li>znajomość RWD,</li>
           <li>znajomość LASS, SASS preprocesorów.</li>
@@ -140,20 +141,25 @@
     <i class="far fa-comment-dots"></i>
     <div class="contactForm">
       <h1>Jeżeli chciałbyś się ze mną skontaktować proszę o wysłanie wiadomości formularzem</h1>
-      <div class="contactWrapper">
+      <form class="contactWrapper" method="POST" data-netlify="true">
         <h2>Imię i Naziwsko</h2>
-        <input type="text">
+        <input type="text" name="name">
         <h2>Temat</h2>
-        <input type="text">
+        <input type="text" name="subject">
         <h2>Adress e-mail</h2>
-        <input type="email" placeholder="name@email.com">
-        <textarea type="text" placeholder="Treść wiadomości"></textarea>
+        <input type="email" placeholder="name@email.com" name="email">
+        <textarea type="text" placeholder="Treść wiadomości" name="message"></textarea>
+        <div data-netlify-recaptcha="true"></div>
         <button>Wyślij</button>
-      </div>
+      </form>
     </div>
   </div>
 
-  <footer> Copyright &copy; 2021 - Adam Modzelewski</footer>
+  <footer> <p>Copyright &copy; 2021 - Adam Modzelewski </p> 
+    <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji
+      procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst
+      jednolity: Dz. U. 2016 r. poz. 922).</p>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>

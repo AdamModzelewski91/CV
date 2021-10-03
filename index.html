@@ -58,7 +58,8 @@
           <li>very good knowledge of AzureDevops,</li>
           <li>good knowledge of HTML,</li>
           <li>good knowledge of CSS,</li>
-          <li>knowledge of JS,</li>
+          <li>good knowledge of JS,</li>
+          <li>knowledge of React,</li>
           <li>knowledge of JQ,</li>
           <li>knowledge of RWD,</li>
           <li>knowledge of LASS, SASS preprocessors.</li>
@@ -140,21 +141,25 @@
     <i class="far fa-comment-dots"></i>
     <div class="contactForm">
       <h1>If you want to contact me, please send me messege with this form</h1>
-      <div class="contactWrapper">
+      <form class="contactWrapper" method="POST" data-netlify="true">
         <h2>First name and last name</h2>
-        <input type="text">
+        <input type="text" name="name">
         <h2>Subject</h2>
-        <input type="text">
+        <input type="text" name="subject">
         <h2>E-mail address</h2>
-        <input type="email" placeholder="name@email.com">
-        <textarea type="text" placeholder="Message content"></textarea>
+        <input type="email" placeholder="name@email.com" name="email">
+        <textarea type="text" placeholder="Message content" name="message"></textarea>
+        <div data-netlify-recaptcha="true"></div>
         <button>Submit</button>
 
-      </div>
+      </form>
     </div>
   </div>
 
-  <footer> Copyright &copy; 2021 - Adam Modzelewski</footer>
+  <footer> <p>Copyright &copy; 2021 - Adam Modzelewski</p>
+  <p>I hereby give consent for my personal data included in my application to be processed for the purposes of
+    the recruitment process under the Personal Data Protection Act as of 29 August 1997, consolidated text:
+    Journal of Laws 2016, item 922 as amended.</p> </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
