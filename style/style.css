@@ -14,10 +14,10 @@ body {
 
 nav ul {
   display: flex;
-  position: fixed;
-  justify-content: space-between;
-  right: 2vw;
-  top: 0%;
+  position: fixed;  
+  justify-content: space-around;
+  right: 2%;
+  top: 0;
   z-index: 1;
   color: #fff;
   width: 40%;
@@ -44,10 +44,7 @@ nav ul {
   line-height: 45px;
 }
 
-
-
-.btnLang button a {
-  display: block;
+.btnLang button a {  
   text-decoration: none;
   color: white;
   font-family: 'Oswald', sans-serif;
@@ -66,13 +63,11 @@ nav ul {
   right: 0;
   padding-top: 5px;
   padding-right: 5px;
-  width: 35%;
+  /* width: 35%; */
   font-size: 1.5rem;
   background-color: rgba(20, 20, 20, 0.5);
   border-bottom-left-radius: 10px;
   height: 50px;
-
-
 }
 
 nav ul li {
@@ -252,7 +247,6 @@ header img {
 
 /* MESSEGE */
 
-
 .messege i {
   position: fixed;
   right: 2vw;
@@ -293,7 +287,6 @@ header img {
   opacity: 1;
 }
 
-
 .messege .contactForm h1 {
   text-align: center;
   font-size: 1.5rem;
@@ -311,7 +304,6 @@ header img {
   display: flex;
   flex-direction: column;
   margin: 0 10%;
-
 }
 
 .messege .contactForm .contactWrapper input {
@@ -372,8 +364,6 @@ header img {
   background-color: #444;
 }
 
-
-
 footer {    
   position: relative;
   padding: 0 10%;
@@ -386,8 +376,6 @@ footer {
   margin-top: 5%;
   font-weight: 400;
 }
-
-
 
 @media (min-width: 320px) and (max-width: 1070px) {
 
@@ -409,17 +397,12 @@ footer {
 
   .messege i {
     right: 15px;
-    bottom: 15px;
-    color: rgb(255, 120, 0);
-    font-size: 2rem;
-    transition: 0.3s;
-    text-shadow: 0 0px 0px black;
-    z-index: 1;
-
+    bottom: 15px;    
+    font-size: 2rem;     
   }
 
   .messege .contactForm {
-    bottom: 90vw;
+    bottom: 45vh;
     right: 5vw;
     transform: translateY(50%);
     width: 90vw;
@@ -440,17 +423,8 @@ footer {
   }
 
   .messege .contactForm .contactWrapper button {
-
-    font-size: 15px;
-    text-transform: uppercase;
-    padding: 10px 0;
-    margin-top: 15px;
-    background-color: black;
-    color: #fff;
-    width: 50%;
-    align-self: center;
-    border: none;
-    cursor: pointer;
+    font-size: 15px;  
+    margin-top: 15px;    
   }
 
   nav ul li {
@@ -473,7 +447,6 @@ footer {
     position: absolute;
     z-index: 2;
     top: 180px;
-
     left: 2vh;
   }
 
@@ -545,6 +518,10 @@ footer {
     margin: 0 auto;
   }
 
+  .messege .contactForm {    
+    width: 80vw;
+    height: 60vh;    
+  }
 
   /*FOOTER*/
 
@@ -552,7 +529,6 @@ footer {
     font-size: 0.8rem;
   }
 }
-
 
 @media (min-width: 768px) and (max-width: 1070px) {
 
@@ -585,8 +561,7 @@ footer {
 
   /* MESSEGE */
 
-  .messege .contactForm {
-    bottom: 30vw;
+  .messege .contactForm {    
     right: 10vw;
     transform: translateY(45%);
     width: 80vw;
@@ -650,7 +625,6 @@ footer {
   }
 }
 
-
 @media (min-width: 1024px) and (max-width: 1070px) {
 
   /* NAV */
@@ -678,8 +652,6 @@ footer {
   }
 
   /* HEADER */
-
-
 
   .head {
     bottom: 0;
@@ -719,9 +691,7 @@ footer {
 
   .experience .wrapper h1 {
     font-size: 2.8rem;
-
   }
-
 
   .experience .wrapper ul li {
     font-size: 1.8rem;
@@ -761,14 +731,11 @@ footer {
     font-size: 2.5rem;
   }
 
-  .active {
-    width: 50%;
+  .active {   
     height: 5vh;
   }
 
   /* HEADER */
-
-
 
   .head {
     bottom: 0;
